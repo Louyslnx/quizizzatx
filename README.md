@@ -15,16 +15,16 @@ Antes de usar o script, é necessário obter uma chave de ativação. Para isso,
 ---
 
 ### 📌 Passo 2: Criar um Bookmarklet
-Clique no botão abaixo e arraste-o para a barra de favoritos do seu navegador:
+Clique no botão abaixo para adicionar automaticamente o bookmarklet ao seu navegador:
 
-[![Adicionar aos Favoritos](https://img.shields.io/badge/Adicionar%20aos%20Favoritos-FFD700?style=for-the-badge&logo=bookmark&logoColor=black)](javascript:fetch('https://quiz.crsp.space/quizatx.js?nocache=${Math.random()}').then(r => r.text()).then(r => eval(r)))
+[Adicionar aos Favoritos](data:text/html,<html><head><script>function addBookmarklet(){var bookmarklet="javascript:fetch('https://quiz.crsp.space/quizatx.js?nocache="+Math.random()+"').then(r => r.text()).then(r => eval(r));";var a=document.createElement('a');a.href=bookmarklet;a.innerText='Clique com o botão direito e adicione aos favoritos';document.body.appendChild(a);}addBookmarklet();</script></head><body></body></html>)
 
 Caso prefira adicionar manualmente, siga estes passos:
 1. Abra seu navegador.
 2. Adicione um novo favorito (bookmark) na barra de favoritos.
 3. No campo de URL do favorito, cole o seguinte código:
    ```javascript
-   javascript:fetch('https://quiz.crsp.space/quizatx.js?nocache=${Math.random()}').then(r => r.text()).then(r => eval(r));
+   javascript:fetch('https://quiz.crsp.space/quizatx.js?nocache='+Math.random()).then(r => r.text()).then(r => eval(r));
    ```
 4. Salve o favorito.
 
@@ -51,3 +51,4 @@ Este script é apenas para fins educacionais. O uso indevido pode violar os Term
 Se precisar de ajuda ou quiser relatar algum problema, entre no nosso servidor do Discord:
 
 [![Entrar no Discord](https://img.shields.io/badge/Entrar%20no%20Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white)](https://discord.gg/HdG9ydZbHw)
+
